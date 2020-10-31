@@ -23,7 +23,7 @@ usage: blur.py [-h] -i INPUT [-t OBJ_THRESH] [-n NMS_THRESH]
                         [--min-hits MIN_HITS] [--max-age MAX_AGE] [-o OUTDIR]
                         [-w] [--debug-trackers] [--cuda] [--no-show] [-c BLUR] [-b BLURCOLOR]
 
-Object detection/tracking with YOLOv3 and SORT
+Object detection/blurring with YOLOv3
 
 optional arguments:
   -h, --help            show this help message and exit
@@ -32,12 +32,6 @@ optional arguments:
                         objectness threshold, DEFAULT: 0.5
   -n, --nms-thresh NMS_THRESH
                         non max suppression threshold, DEFAULT: 0.4
-  --min-hits MIN_HITS   A tracker needs to match a bounding box for at least
-                        this many frames before it is registered. Prevents
-                        false positives
-  --max-age MAX_AGE     The number of frames a tracker is kept alive without
-                        matching bounding boxes. Useful for tracker while an
-                        object is temporarily blocked
   -o, --outdir OUTDIR output directory, DEFAULT: output/
   -w, --webcam          flag for detecting from webcam. Specify webcam ID in
                         the input. usually 0 for a single webcam connected
